@@ -20,7 +20,6 @@ namespace TrackerLibrary
             }
             else if (db == DatabaseType.TextFile)
             {
-                // TODO - Setup the text connector properly.
                 TextConnector text = new TextConnector();
                 Connection = text;
             }
