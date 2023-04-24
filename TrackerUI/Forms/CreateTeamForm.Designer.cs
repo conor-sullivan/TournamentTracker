@@ -53,7 +53,7 @@
             // 
             // teamNameValue
             // 
-            teamNameValue.Location = new System.Drawing.Point(22, 110);
+            teamNameValue.Location = new System.Drawing.Point(21, 100);
             teamNameValue.Name = "teamNameValue";
             teamNameValue.Size = new System.Drawing.Size(371, 35);
             teamNameValue.TabIndex = 13;
@@ -88,7 +88,7 @@
             addMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             addMemberButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             addMemberButton.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            addMemberButton.Location = new System.Drawing.Point(114, 255);
+            addMemberButton.Location = new System.Drawing.Point(114, 222);
             addMemberButton.Name = "addMemberButton";
             addMemberButton.Size = new System.Drawing.Size(191, 55);
             addMemberButton.TabIndex = 19;
@@ -99,7 +99,7 @@
             // selectTeamMemberDropdown
             // 
             selectTeamMemberDropdown.FormattingEnabled = true;
-            selectTeamMemberDropdown.Location = new System.Drawing.Point(22, 201);
+            selectTeamMemberDropdown.Location = new System.Drawing.Point(21, 178);
             selectTeamMemberDropdown.Name = "selectTeamMemberDropdown";
             selectTeamMemberDropdown.Size = new System.Drawing.Size(370, 38);
             selectTeamMemberDropdown.TabIndex = 18;
@@ -109,7 +109,7 @@
             selectTeamMemberLabel.AutoSize = true;
             selectTeamMemberLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             selectTeamMemberLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            selectTeamMemberLabel.Location = new System.Drawing.Point(15, 161);
+            selectTeamMemberLabel.Location = new System.Drawing.Point(15, 138);
             selectTeamMemberLabel.Name = "selectTeamMemberLabel";
             selectTeamMemberLabel.Size = new System.Drawing.Size(263, 37);
             selectTeamMemberLabel.TabIndex = 17;
@@ -128,7 +128,7 @@
             addNewMemberBox.Controls.Add(firstNameLabel);
             addNewMemberBox.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             addNewMemberBox.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            addNewMemberBox.Location = new System.Drawing.Point(22, 316);
+            addNewMemberBox.Location = new System.Drawing.Point(21, 295);
             addNewMemberBox.Name = "addNewMemberBox";
             addNewMemberBox.Size = new System.Drawing.Size(371, 308);
             addNewMemberBox.TabIndex = 20;
@@ -230,7 +230,7 @@
             teamMembersListBox.ItemHeight = 30;
             teamMembersListBox.Location = new System.Drawing.Point(420, 110);
             teamMembersListBox.Name = "teamMembersListBox";
-            teamMembersListBox.Size = new System.Drawing.Size(371, 514);
+            teamMembersListBox.Size = new System.Drawing.Size(371, 484);
             teamMembersListBox.TabIndex = 21;
             // 
             // removeSelectedMember
@@ -257,7 +257,7 @@
             createTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             createTeamButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             createTeamButton.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            createTeamButton.Location = new System.Drawing.Point(301, 650);
+            createTeamButton.Location = new System.Drawing.Point(306, 618);
             createTeamButton.Name = "createTeamButton";
             createTeamButton.Size = new System.Drawing.Size(322, 73);
             createTeamButton.TabIndex = 26;
@@ -270,7 +270,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(968, 749);
+            ClientSize = new System.Drawing.Size(968, 703);
             Controls.Add(createTeamButton);
             Controls.Add(removeSelectedMember);
             Controls.Add(teamMembersListBox);

@@ -55,7 +55,7 @@
             // 
             // placeNumberValue
             // 
-            placeNumberValue.Location = new System.Drawing.Point(245, 71);
+            placeNumberValue.Location = new System.Drawing.Point(216, 62);
             placeNumberValue.Name = "placeNumberValue";
             placeNumberValue.Size = new System.Drawing.Size(200, 35);
             placeNumberValue.TabIndex = 14;
@@ -65,7 +65,7 @@
             placeNumberLabel.AutoSize = true;
             placeNumberLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             placeNumberLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            placeNumberLabel.Location = new System.Drawing.Point(27, 68);
+            placeNumberLabel.Location = new System.Drawing.Point(27, 59);
             placeNumberLabel.Name = "placeNumberLabel";
             placeNumberLabel.Size = new System.Drawing.Size(183, 37);
             placeNumberLabel.TabIndex = 13;
@@ -73,7 +73,7 @@
             // 
             // placeNameValue
             // 
-            placeNameValue.Location = new System.Drawing.Point(245, 118);
+            placeNameValue.Location = new System.Drawing.Point(216, 103);
             placeNameValue.Name = "placeNameValue";
             placeNameValue.Size = new System.Drawing.Size(200, 35);
             placeNameValue.TabIndex = 16;
@@ -83,7 +83,7 @@
             placeNameLabel.AutoSize = true;
             placeNameLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             placeNameLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            placeNameLabel.Location = new System.Drawing.Point(27, 115);
+            placeNameLabel.Location = new System.Drawing.Point(27, 101);
             placeNameLabel.Name = "placeNameLabel";
             placeNameLabel.Size = new System.Drawing.Size(157, 37);
             placeNameLabel.TabIndex = 15;
@@ -91,7 +91,7 @@
             // 
             // prizeAmountValue
             // 
-            prizeAmountValue.Location = new System.Drawing.Point(245, 165);
+            prizeAmountValue.Location = new System.Drawing.Point(216, 144);
             prizeAmountValue.Name = "prizeAmountValue";
             prizeAmountValue.Size = new System.Drawing.Size(200, 35);
             prizeAmountValue.TabIndex = 18;
@@ -103,7 +103,7 @@
             prizeAmountLabel.AutoSize = true;
             prizeAmountLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             prizeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            prizeAmountLabel.Location = new System.Drawing.Point(27, 162);
+            prizeAmountLabel.Location = new System.Drawing.Point(27, 141);
             prizeAmountLabel.Name = "prizeAmountLabel";
             prizeAmountLabel.Size = new System.Drawing.Size(176, 37);
             prizeAmountLabel.TabIndex = 17;
@@ -111,9 +111,9 @@
             // 
             // prizePercentageValue
             // 
-            prizePercentageValue.Location = new System.Drawing.Point(245, 268);
+            prizePercentageValue.Location = new System.Drawing.Point(245, 222);
             prizePercentageValue.Name = "prizePercentageValue";
-            prizePercentageValue.Size = new System.Drawing.Size(200, 35);
+            prizePercentageValue.Size = new System.Drawing.Size(171, 35);
             prizePercentageValue.TabIndex = 20;
             prizePercentageValue.Text = "0";
             // 
@@ -122,7 +122,7 @@
             prizePercentageLabel.AutoSize = true;
             prizePercentageLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             prizePercentageLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            prizePercentageLabel.Location = new System.Drawing.Point(27, 265);
+            prizePercentageLabel.Location = new System.Drawing.Point(27, 219);
             prizePercentageLabel.Name = "prizePercentageLabel";
             prizePercentageLabel.Size = new System.Drawing.Size(212, 37);
             prizePercentageLabel.TabIndex = 19;
@@ -133,7 +133,7 @@
             orLabel.AutoSize = true;
             orLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             orLabel.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            orLabel.Location = new System.Drawing.Point(191, 215);
+            orLabel.Location = new System.Drawing.Point(181, 182);
             orLabel.Name = "orLabel";
             orLabel.Size = new System.Drawing.Size(85, 37);
             orLabel.TabIndex = 21;
@@ -147,7 +147,7 @@
             createPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             createPrizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             createPrizeButton.ForeColor = System.Drawing.Color.FromArgb(51, 153, 255);
-            createPrizeButton.Location = new System.Drawing.Point(70, 338);
+            createPrizeButton.Location = new System.Drawing.Point(80, 274);
             createPrizeButton.Name = "createPrizeButton";
             createPrizeButton.Size = new System.Drawing.Size(322, 73);
             createPrizeButton.TabIndex = 27;
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(489, 444);
+            ClientSize = new System.Drawing.Size(489, 366);
             Controls.Add(createPrizeButton);
             Controls.Add(orLabel);
             Controls.Add(prizePercentageValue);

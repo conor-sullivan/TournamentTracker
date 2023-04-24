@@ -89,5 +89,50 @@ namespace TrackerUI
             CreateTeamForm frm = new CreateTeamForm(this);
             frm.Show();
         }
+
+        private void removeSelectedPrizeButton_Click(object sender, EventArgs e)
+        {
+            PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
+
+            if (p != null)
+            {
+                selectedPrizes.Remove(p);
+                WireUpLists();
+            }
+        }
+
+        private void createTournamentButton_Click(object sender, EventArgs e)
+        {
+            // validate data
+            decimal fee = 0;
+            bool feeAcceptable = decimal.TryParse(entryFeeValue.Text, out fee);
+
+            if (!feeAcceptable)
+            {
+                MessageBox.Show("You need to enter a valid Entry Fee.",
+                    "Invalid Fee",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+
+            // create tournament model
+            TournamentModel tm = new TournamentModel();
+
+            tm.TournamentName = tournamentNameValue.Text;
+            tm.EntryFee = fee;
+
+            tm.Prizes = selectedPrizes;
+            tm.EnteredTeams = selectedTeams;
+
+            // TODO - wire our matchups
+            TournamentLogic.CreateRounds(tm);
+
+            // create tournament entry
+            // create all prizes entries
+            // create all team entries
+            GlobalConfig.Connection.CreateTournament(tm);
+
+        }
     }
 }

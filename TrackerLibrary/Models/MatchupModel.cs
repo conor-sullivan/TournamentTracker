@@ -8,6 +8,7 @@ namespace TrackerLibrary
 {
     public class MatchupModel
     {
+        public int Id { get; set; }
         /// <summary>
         ///     Represents the list of team matchups for a given round.
         /// </summary>

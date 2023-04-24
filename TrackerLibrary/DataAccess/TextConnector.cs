@@ -13,6 +13,9 @@ namespace TrackerLibrary
         private const string PrizesFile = "PrizeModels.csv";
         private const string PeopleFile = "PersonModels.csv";
         private const string TeamsFile = "TeamModels.csv";
+        private const string TournamentFile = "TournamentModels.csv";
+        private const string MatchupFile = "MatchupModels.csv";
+        private const string MatchupEntryFiles = "MathchupEntryModels.csv";
 
         public PersonModel CreatePerson(PersonModel model)
         {
@@ -33,7 +36,6 @@ namespace TrackerLibrary
 
         }
 
-        // TODO - Make CreatePrize actually save the data to the text file.
         /// <summary>
         ///     Saves a new prize to the text file.
         /// </summary>
@@ -92,7 +94,30 @@ namespace TrackerLibrary
 
         public List<TeamModel> GetTeams_All()
         {
-            throw new NotImplementedException();
+            return TeamsFile.FullFilePath().LoadFile().ConvertToTeamModels(PeopleFile);
+        }
+
+        public void CreateTournament(TournamentModel model)
+        {
+            List<TournamentModel> tournaments = TournamentFile
+                .FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentModels(TeamsFile, PeopleFile, PrizesFile);
+
+            int currentId = 1;
+
+            if (tournaments.Count > 0)
+            {
+                currentId = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+
+            model.Id = currentId;
+
+            model.SaveRoundsToFile(model, MatchupFile, MatchupEntryFile);
+
+            tournaments.Add(model);
+
+            tournaments.SaveToTournamentFile(TournamentFile);
         }
     }
 }
